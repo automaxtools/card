@@ -1,0 +1,168 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica Neue, Arial, sanserif;
+  }
+  
+  body {
+    /* min-height: 100vh; */
+    /* margin: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #body {
+   
+    background-image: url("https://www.automaxtools.me/wp-content/uploads/2023/09/Asset-3.png");
+    background-size: 500px;
+    /* height: 928px;
+    width: 428px;
+    box-shadow: 5px 5px 5px silver; */
+  }
+  
+  main {
+    height: 928px;
+    width: 428px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: center;
+  }
+  
+  .card-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: -180px;
+    overflow: visible;
+    z-index: 1;
+  }
+  
+  .card-head img {
+    border: 5px solid #fff;
+    border-radius: 25px;
+    width: 180px;
+    height: 180px;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  #card {
+    background-color: rgb(255, 255, 255, 0.25);
+    width: 428px;
+    height: 763px;
+    padding-top: 158px;
+    overflow: visible;
+    /* border-radius: 60px 60px 0px 0px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .card-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 370px;
+  }
+  
+  label {
+    background-color: #fff;
+    height: 50px;
+    width: 354px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px;
+  }
+
+
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    color: #66A329;
+    margin-bottom: 12px;
+  }
+  
+  label p {
+    /* width: 130px; */
+    font-size: 18px;
+    text-align: left;
+    color: #6C6C6C;
+    text-decoration: none;
+  }
+  
+  #ID_Joined, #ID_Name, #ID_Lastname, #ID_Birthday, #ID_V-name {
+    background-color: rgb(255, 255, 255, 0);
+    width: 140px;
+    border: none;
+    font-size: 20px;
+    text-align: left;
+    color: #000;
+  }
+  
+  .card-footer {
+    width: 354px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .pfeil_links {
+    font-size: 150px;
+    color: #fff;
+    -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      -ms-filter: "FlipH";
+      filter: FlipH;
+  }
+  
+  .welcome {
+    margin-left: -245px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  .pfeil_rechts {
+    font-size: 150px;
+    color: #fff;
+  }
+  
+  .my_work {
+    margin-right: -245px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+  }
+  

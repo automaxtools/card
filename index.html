@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faraz Zaidi Automaxtools</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    
+<div id="body">
+  
+    <main>
+      <div class="card-head">
+        <img src="https://www.automaxtools.me/wp-content/uploads/2023/07/main-qimg-5e47e602cf2a2246124f5ea8358181a4-lq.jpg" alt="Profilbild" height="180px">
+        <h1>Faraz Zaidi</h1>
+        <h2>Sales Consultant</h2>
+      </div>
+      <div id="card">
+        <div class="card-main">
+
+            <a href="tel:971508813019">
+          <label  for="textinput">
+            <div class="icon">☎</div>
+            <p>+971 50 881 3019</p>
+          </label>
+        </a>
+
+        <a href="mailto:sales06@automaxtools.me">
+          <label for="textinput">
+            <div class="icon">✉️</div>
+           <p>sales06@automaxtools.me</p>
+          </label>
+        </a>
+
+        <a href="https://www.automaxtools.me/">
+          <label for="textinput">
+            <div class="icon">🌐</div>
+            <p>www.automaxtools.me</p>
+          </label>
+        </a>
+
+          <a href="https://www.automaxtools.me/online-catalog/">
+          <label for="textinput">
+            <div class="icon">📘 </div>
+            <p>Online Catalog</p>
+          </label>
+        </a>
+
+          <a href="https://g.page/automaxtools?share">
+          <label for="textinput">
+            <div class="icon">📍 </div>
+            <p>Industrial Area 2 - Sharjah - U.A.E.</p>
+          </label>
+        </a>
+
+        </div>
+
+<!-- <button  style=" background-color: #fff;
+height: 50px;
+width: 100px;
+
+border-radius: 25px;
+border: #fff;">Share</button>
+
+<button  style=" background-color: #fff;
+height: 50px;
+width: 100px;
+
+border-radius: 25px;
+border: #fff;">Share</button> -->
+
+<button id="printButton" onclick="print()">Print</button>
+<p  class="result"></p>
+
+        <div class="card-footer">
+          <div class="pfeil_links">&#10159;</div>
+            <div  class="welcome">Save</div>
+           <div  class="my_work btn">Share</div>
+          <div  id="d" class="pfeil_rechts">&#10159;</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    let shareData = {
+      title: 'AMT',
+      text: 'Business card',
+      url: 'https://www.automaxtools.me/',
+    }
+
+    const btn = document.querySelector('#d');
+    const resultPara = document.querySelector('.result');
+
+    btn.addEventListener('click', () => {
+      navigator.share(shareData)
+        .then(() =>
+          resultPara.textContent = 'Shared successfully'
+        )
+        .catch((e) =>
+          resultPara.textContent = 'Error: ' + e
+        )
+    });
+
+
+
+
+
+    window.jsPDF = window.jspdf.jsPDF;
+var docPDF = new jsPDF();
+function print(){
+var elementHTML = document.querySelector("#body");
+docPDF.html(elementHTML, {
+ callback: function(docPDF) {
+  docPDF.save('HTML Linuxhint web page.pdf');
+ },
+ x: 15,
+ y: 15,
+ width: 170,
+ windowWidth: 650
+});
+}
+  </script>
+
+</body>
+</html>
