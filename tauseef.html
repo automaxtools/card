@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tauseef Salam Automaxtools</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js "></script>
+    <link rel="icon" type="image/x-icon" href="./img/tauseef.jpg">
+    
+</head>
+<body id="content">
+    
+<div id="body">
+  
+    <main>
+      <div class="card-head">
+        <img src="./img/tauseef.jpg" alt="Profilbild" height="180px">
+        <h1>Tauseef Salam</h1>
+        <h2>Team Leader- Outdoor Sales</h2>
+      </div>
+      <div id="card">
+        <div class="card-main">
+
+            <a href="tel:971555261437">
+          <label  for="textinput">
+            <div class="icon">☎</div>
+            <p>+971 55 526 1437</p>
+          </label>
+        </a>
+
+        <a href="mailto:sales03@automaxtools.me">
+          <label for="textinput">
+            <div class="icon">✉️</div>
+           <p>sales03@automaxtools.me</p>
+          </label>
+        </a>
+
+        <a href="https://www.automaxtools.me/">
+          <label for="textinput">
+            <div class="icon">🌐</div>
+            <p>www.automaxtools.me</p>
+          </label>
+        </a>
+
+          <a href="https://www.automaxtools.me/online-catalog/">
+          <label for="textinput">
+            <div class="icon">📘 </div>
+            <p>Online Catalog</p>
+          </label>
+        </a>
+
+          <a href="https://g.page/automaxtools?share">
+          <label for="textinput">
+            <div class="icon">📍 </div>
+            <p>Industrial Area 2 - Sharjah - U.A.E.</p>
+          </label>
+        </a>
+
+        </div>
+
+<!-- <button  style=" background-color: #fff;
+height: 50px;
+width: 100px;
+
+border-radius: 25px;
+border: #fff;">Share</button>
+
+<button  style=" background-color: #fff;
+height: 50px;
+width: 100px;
+
+border-radius: 25px;
+border: #fff;">Share</button> -->
+
+<!-- <button id="printButton" onclick="print()">Print</button> -->
+<p  class="result"></p>
+
+        <div class="card-footer">
+          <div id="printButton" onclick="print()" class="pfeil_links">&#10159;</div>
+            <div  class="welcome">🖨️ / Save</div>
+           <div  class="my_work btn">🔗 Share</div>
+          <div  id="d" class="pfeil_rechts">&#10159;</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    let shareData = {
+      title: 'AMT',
+      text: 'Tauseef Salam Business Card',
+      url: 'https://automaxtools.github.io/card/tauseef.html',
+    }
+
+    const btn = document.querySelector('#d');
+    const resultPara = document.querySelector('.result');
+
+    btn.addEventListener('click', () => {
+      navigator.share(shareData)
+        .then(() =>
+          resultPara.textContent = 'Shared successfully'
+        )
+        .catch((e) =>
+          resultPara.textContent = 'Error: ' + e
+        )
+    });
+
+
+
+
+
+    window.jsPDF = window.jspdf.jsPDF;
+
+// Convert HTML content to PDF
+function Convert_HTML_To_PDF() {
+    var doc = new jsPDF();
+	
+    // Source HTMLElement or a string containing HTML.
+    var elementHTML = document.querySelector("#content");
+
+    doc.html(elementHTML, {
+        callback: function(doc) {
+            // Save the PDF
+            doc.save('AMT.pdf');
+        },
+        margin: [10, 10, 10, 10],
+        autoPaging: 'text',
+        x: 0,
+        y: 0,
+        width: 190, //target width in the PDF document
+        windowWidth: 675 //window width in CSS pixels
+    });
+}
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>
