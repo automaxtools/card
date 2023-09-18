@@ -17,14 +17,14 @@
    
     background-image: url("https://www.automaxtools.me/wp-content/uploads/2023/09/Asset-3-e1695035019651.png");
     background-size: 500px;
-    height: 928px;
+    /* height: 928px;
     width: 428px;
-    box-shadow: 5px 5px 5px silver;
+    box-shadow: 5px 5px 5px silver; */
   }
   
   main {
-    height: 928px;
-    width: 428px;
+    /* height: 1300px; */
+    /* width: 428px; */
     display: flex;
     flex-direction: column;
     align-items: space-evenly;
@@ -35,8 +35,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: -180px;
+    /* margin-top: 50px; */
+    /* margin-bottom: -180px; */
     overflow: visible;
     z-index: 1;
   }
@@ -45,7 +45,7 @@
     border: 5px solid #fff;
     border-radius: 25px;
     width: 180px;
-    height: 180px;
+    /* height: 180px; */
   }
   
   h1 {
@@ -58,17 +58,25 @@
   
   h2 {
     color: #fff;
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 25px;
+    font-weight: 600;
     text-align: center;
     margin-top: 5px;
   }
+  h4 {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 10px;
+  }
   
   #card {
-    background-color: rgb(255, 255, 255, 0.25);
+    /* background-color: rgb(255, 255, 255, 0.25); */
     width: 428px;
-    height: 763px;
-    padding-top: 158px;
+    height: 1393px;
+    /* padding-top: 48px; */
     overflow: visible;
     /* border-radius: 60px 60px 0px 0px; */
     display: flex;
@@ -82,7 +90,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 370px;
+    height: 120px;
+    
   }
   
   label {
